@@ -183,11 +183,11 @@ The third task involves deploying the Flask application on a platform or recordi
 
 Deployment Method
 
-For deployment, the application can be hosted on platforms such as AWS, or Google Cloud Platform. Alternatively, a local demo can be recorded.
+For deployment, the application can be hosted on AWS or Google Cloud Platform platforms. Alternatively, a local demo can be recorded.
 
 Deployment Instructions
 
-- Deploy the Flask application to the chosen platform using the provided deployment guidelines.
+- Deploy the Flask application using the provided deployment guidelines to the chosen platform.
 - Provide the deployment URL or a link to the local demo in the README.md file.
 
 Author
@@ -197,13 +197,13 @@ Doorva Agrawal
 
 Acknowledgments
 
-The development of this project was made possible with the support and contributions of various individuals and resources. I  would like to express our gratitude to:
+The development of this project was made possible with the support and contributions of various individuals and resources. I  want to express our gratitude to:
 
-SEC EDGAR Database: For providing access to 10-K filings and financial reports.
-Flask Framework: For enabling the development of the backend server for this application.
-jQuery Library: For simplifying AJAX requests and DOM manipulation in the frontend code.
-GitHub: For hosting the project repository and facilitating collaboration.
-OpenAI GPT-3: For providing assistance and guidance during the development process.
-Stack Overflow Community: For providing valuable insights and solutions to technical challenges.
+- SEC EDGAR Database: For providing access to 10-K filings and financial reports.
+- Flask Framework: For enabling the development of the backend server for this application.
+- jQuery Library: For simplifying AJAX requests and DOM manipulation in the frontend code.
+- GitHub: For hosting the project repository and facilitating collaboration.
+- OpenAI GPT-3: For providing assistance and guidance during the development process.
+- Stack Overflow Community: For providing valuable insights and solutions to technical challenges.
 
 I acknowledge and appreciate the contributions of all individuals and resources involved in the development and completion of this project.
