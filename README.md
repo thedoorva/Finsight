@@ -186,7 +186,6 @@ Deployment Instructions
 - Provide the deployment URL or a link to the local demo in the README.md file.
 
 Author
-
 Doorva Agrawal
 
 Acknowledgments
