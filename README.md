@@ -23,7 +23,7 @@ The following companies have been selected for analysis:
 Python Script (download_10k.py)
 The download_10k.py script is used to download 10-K filings for the selected companies from the SEC website.
 
-python
+'''python
 import requests
 
 def get_10k_filings(ticker, cik):
@@ -67,6 +67,7 @@ def download_10k_filings(ticker):
                     print(f"Failed to download {filename}. Status code: {response.status_code}")
     else:
         print(f"Invalid ticker: {ticker}")
+'''
 
 ticker = input("Enter the ticker symbol of the company (e.g., JPM, GS, BLK): ")
 download_10k_filings(ticker)
@@ -85,7 +86,7 @@ The second task involves using a Flask backend and JavaScript frontend to perfor
 Backend Code (Flask)
 The Flask backend (app.py) provides routes for analyzing the 10-K filings and serving the frontend interface.
 
-python
+'''python
 from flask import Flask, render_template, request, jsonify
 import requests
 
@@ -97,11 +98,12 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+'''
 
 Frontend Code (HTML, JavaScript)
 The frontend interface (index.html) allows users to input company ticker symbols and trigger the analysis process.
 
-html
+''html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,6 +159,7 @@ html
     </script>
 </body>
 </html>
+'''
 
 Steps to Run
 Run the Flask server by executing python app.py in the terminal.
