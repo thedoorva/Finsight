@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-K Analysis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>10-K Analysis</h1>
+    <label for="ticker">Enter the ticker symbol of the company (e.g., JPM, GS, BLK):</label>
+    <input type="text" id="ticker" name="ticker">
+    <button id="analyze-btn">Analyze</button>
+
+    <div id="insights">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#analyze-btn').click(function() {
+                var ticker = $('#ticker').val();
+                if (ticker.trim() === '') {
+                    alert('Please enter a ticker symbol');
+                    return;
+                }
+                
+                $.ajax({
+                    url: '/analyze',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ 'ticker': ticker }),
+                    success: function(response) {
+                        if ('error' in response) {
+                            alert(response['error']);
+                        } else {
+                            displayInsights(response);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        alert('Failed to analyze 10-K filings');
+                        console.error(error);
+                    }
+                });
+            });
+
+            function displayInsights(insights) {
+                $('#insights').empty();
+                $.each(insights, function(key, value) {
+                    $('#insights').append(`<p><strong>${key}:</strong> ${value}</p>`);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
