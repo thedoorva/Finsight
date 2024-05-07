@@ -82,8 +82,8 @@ Task Description
 
 The second task involves using a Flask backend and JavaScript frontend to perform text analysis on the downloaded 10-K filings and generate insights.
 
-Backend Code (Flask)
-The Flask backend (app.py) provides routes for analyzing the 10-K filings and serving the frontend interface.
+Backend Code using Flask
+The Flask backend (app.py) provides routes for analyzing the 10-K filings and serving the frontend interface. Flask was chosen as the backend framework for its simplicity, flexibility, and ease of use. It allows for rapid development of web applications with minimal boilerplate code, making it ideal for prototyping and building lightweight applications like Finsight.
 
 ```python
 from flask import Flask, render_template, request, jsonify
@@ -99,8 +99,10 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-Frontend Code (HTML, JavaScript)
-The frontend interface (index.html) allows users to input company ticker symbols and trigger the analysis process.
+Frontend Code using HTML, JavaScript
+The frontend interface (index.html) allows users to input company ticker symbols and trigger the analysis process. JavaScript was chosen for the frontend development due to its widespread support, extensive ecosystem of libraries and frameworks, and its ability to create interactive and dynamic user interfaces. JavaScript, along with HTML and CSS, enables the creation of a responsive and engaging user experience in the web browser.
+
+
 
 ```html
 <!DOCTYPE html>
@@ -169,6 +171,9 @@ Steps to Run
 4. Example Usage
 Including screenshots demonstrating how to use the application and view the generated insights.
 ![alt text](WebPage.PNG)
+
+Why Flask and JavaScript?
+Flask was selected for the backend because of its lightweight nature and minimalistic approach, allowing for quick setup and development of RESTful APIs. JavaScript was chosen for the frontend because of its versatility and ubiquity in web development, making it an ideal choice for creating interactive and dynamic user interfaces.
 
 Task 3: Simple App Deployment
 
