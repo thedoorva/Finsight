@@ -71,14 +71,15 @@ def download_10k_filings(ticker):
 ```
 
 Steps to Run
-Execute the download_10k.py script in a Python environment.
-Enter the ticker symbol of the company when prompted.
-The script will fetch and download the 10-K filings for the specified company.
-Example Usage
-Include screenshots or GIFs demonstrating how to run the script and the output obtained.
+
+1. Execute the download_10k.py script in a Python environment.
+2. Enter the ticker symbol of the company when prompted.
+3. The script will fetch and download the 10-K filings for the specified company.
 
 Task 2: Text Analysis
+
 Task Description
+
 The second task involves using a Flask backend and JavaScript frontend to perform text analysis on the downloaded 10-K filings and generate insights.
 
 Backend Code (Flask)
@@ -161,30 +162,35 @@ The frontend interface (index.html) allows users to input company ticker symbols
 ```
 
 Steps to Run
-Run the Flask server by executing python app.py in the terminal.
-Open a web browser and navigate to the specified URL (usually http://127.0.0.1:5000/).
-Enter a company ticker symbol and click "Analyze" to generate insights.
-Example Usage
+
+1. Run the Flask server by executing python app.py in the terminal.
+2. Open a web browser and navigate to the specified URL (usually http://127.0.0.1:5000/).
+3. Enter a company ticker symbol and click "Analyze" to generate insights.
+4. Example Usage
 Including screenshots demonstrating how to use the application and view the generated insights.
 ![alt text](WebPage.PNG)
 
 Task 3: Simple App Deployment
+
 Task Description
+
 The third task involves deploying the Flask application on a platform or recording a local demo.
 
 Deployment Method
+
 For deployment, the application can be hosted on platforms such as AWS, or Google Cloud Platform. Alternatively, a local demo can be recorded.
 
 Deployment Instructions
-Deploy the Flask application to the chosen platform using the provided deployment guidelines.
-Provide the deployment URL or a link to the local demo in the README.md file.
-Example Deployment
-Include screenshots or GIFs demonstrating the deployed application in action.
+
+- Deploy the Flask application to the chosen platform using the provided deployment guidelines.
+- Provide the deployment URL or a link to the local demo in the README.md file.
 
 Author
+
 Doorva Agrawal
 
 Acknowledgments
+
 The development of this project was made possible with the support and contributions of various individuals and resources. I  would like to express our gratitude to:
 
 SEC EDGAR Database: For providing access to 10-K filings and financial reports.
